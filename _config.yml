@@ -1,0 +1,96 @@
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
+
+title: Hardware Space
+url: 
+name: CONF(name)
+description: CONF(description)
+baseurl: "/"
+show_downloads: false
+
+twitter_username: 
+github_username: alexandre-mbm
+linkedin_username: 
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# minimal-mistakes customizations
+
+minimal_mistakes_skin: "air"
+title_separator: "|"
+breadcrumbs: true
+paginate: 10
+paginate_path: /page:num/
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      related: true
+
+author:
+   name: "Alexandre Magno"
+   avatar: "https://pt.gravatar.com/userimage/4698392/9468064a0011af421a8965d503a307d4.png" # 250px
+   bio: "Placeholder bio!!"
+   links:
+     - label: "Sobre mim"
+       icon:  "fab fa-linkedin"
+       url:   "/web/me"
+     - label: "GitHub"
+       icon:  "fab fa-fw fa-github"
+       url:   "https://github.com/alexandre-mbm"
+
+twitter:
+   username: 
+linkedin:
+   username: 
+
+analytics:
+   provider: 'google-gtag'
+   google:
+     tracking_id: '' #'UA-50378804-1'
+     anonymize_ip: false
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+#
+# END minimal-mistakes customizations
+#
+
+repository: alexandre-mbm/web
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+
+whitelist: 
+  - jekyll-feed
+  - jekyll-sitemap # minimal-mistakes
+  - jekyll-include-cache # minimal-mistakes
+  - jekyll-paginate # minimal-mistakes
+  - jekyll-gist # minimal-mistakes
+  - jekyll-remote-theme
+  
+include:
+  - _pages
+# exclude:
+  # - Gemfile
+  # - Gemfile.lock
+
+# Should this be :year-:title? /:year/:month/:title? /:year/:title? /:title?
+permalink: /:categories/:year-:title/
